@@ -1,0 +1,309 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "BlueFire Spanish Cybersecurity Presentation Website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create hero section with BlueFire branding, Spanish tagline, CTA button, and generated hero background image",
+      "acceptanceCriteria": [
+        "Hero section displays 'BlueFire' as the company name",
+        "Tagline conveys cybersecurity consulting focus for Mexican market",
+        "CTA button is prominent and actionable",
+        "Hero background image is rendered from generated assets"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create hero section component with BlueFire company name, Spanish tagline emphasizing cybersecurity consulting expertise in Mexico, primary CTA button for contact/pilot scan request, and hero background image from frontend/public/assets/generated/hero-bg.dim_1920x1080.png. Use absolute positioning or background-image CSS to display the generated hero image."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render HeroSection component as the first section of the landing page. Ensure proper layout structure for single-page presentation website."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create Services section in Spanish with four core cybersecurity services, descriptions, Mexican market context, and benefits",
+      "acceptanceCriteria": [
+        "Four services are displayed with Spanish titles and descriptions",
+        "Each service includes purpose, necessity in Mexican market, and benefits",
+        "Content matches the detailed descriptions from the source document",
+        "Services are presented in a visually organized grid or card layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "create",
+          "description": "Create services section component displaying four core services in Spanish: Registro de Activos (Asset Registry), Evaluación de Vulnerabilidades (Vulnerability Assessment), Remediación de Vulnerabilidades, and Segmentación de Redes (Network Segmentation). Each service card should include title, description, necessity in Mexican context, and key benefits. Use card/grid layout for visual organization. Reference service icon images: frontend/public/assets/generated/service-asset-registry.dim_256x256.png, frontend/public/assets/generated/service-vulnerability.dim_256x256.png, frontend/public/assets/generated/service-remediation.dim_256x256.png, frontend/public/assets/generated/service-segmentation.dim_256x256.png."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render ServicesSection component after HeroSection in the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create Market Context section in Spanish highlighting Mexico cybersecurity statistics and threat landscape",
+      "acceptanceCriteria": [
+        "Statistics section displays key threat data for Mexico",
+        "Attack volume numbers are prominently displayed (40B+, 35.2B)",
+        "Sector breakdown shows finance, health, and manufacturing percentages",
+        "PYME vulnerability statistics are highlighted",
+        "All content is in Spanish"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/MarketContextSection.tsx",
+          "operation": "create",
+          "description": "Create market context section component in Spanish displaying cybersecurity statistics for Mexico: over 40 billion cyberattack attempts in H1 2025, 35,200 million in Q1 2026, 74% of Mexican companies affected by ransomware in 2025, sector breakdown (finance 31%, health 21%, manufacturing 19%), and PYME vulnerability data (only 40% have active security protocols despite representing 99.8% of Mexican businesses). Use prominent typography for key numbers. Reference supporting image frontend/public/assets/generated/stats-mexico.dim_800x600.png for data visualization."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render MarketContextSection component after ServicesSection in the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create Target Clients section in Spanish differentiating PYMEs vs Maquiladoras service approaches and listing target client types",
+      "acceptanceCriteria": [
+        "Two distinct client segments are clearly differentiated",
+        "PYME characteristics are listed (short cycle, standardized, accessible)",
+        "Maquiladora characteristics are listed (long cycle, formal contracts, insurance)",
+        "Target client types are enumerated",
+        "All content is in Spanish"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TargetClientsSection.tsx",
+          "operation": "create",
+          "description": "Create target clients section component in Spanish differentiating service approaches for PYMEs (short sales cycle, standardized services, accessible pricing, simplified deliverables) versus Maquiladoras (long sales cycle, formal SOW and NDA required, professional insurance needed, higher-ticket projects, recurring contracts). Include descriptions of target client types: local PYMEs (retail, logistics, services), manufacturing plants, supply chain providers, and MSPs/IT providers. Use side-by-side or card layout for clear differentiation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render TargetClientsSection component after MarketContextSection in the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Workflow Overview section in Spanish explaining MAIVOR workflow process for asset registry, vulnerability assessment, patching, and network segmentation",
+      "acceptanceCriteria": [
+        "Workflow section explains the four main service processes",
+        "Key stages are outlined: discovery, scanning, remediation, segmentation",
+        "IT/OT environment considerations are mentioned",
+        "Process is presented as secure and repeatable",
+        "All content is in Spanish"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WorkflowSection.tsx",
+          "operation": "create",
+          "description": "Create workflow overview section component in Spanish explaining the MAIVOR workflow process for Asset Registry, Vulnerability Assessment, Patching, and Network Segmentation. Include key stages: discovery (passive and active), vulnerability scanning, remediation planning, segmentation design, and validation. Emphasize secure, repeatable methodology for IT/OT environments. Reference workflow diagram image frontend/public/assets/generated/workflow-diagram.dim_1000x600.png to visualize the process flow."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render WorkflowSection component after TargetClientsSection in the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create Pilot Program section in Spanish promoting entry-level quick scan service with process steps and deliverables",
+      "acceptanceCriteria": [
+        "Pilot program is prominently featured with service description",
+        "Quick scan scope is specified (1-3 IPs/domains)",
+        "Deliverables are listed (executive report, 30-min meeting)",
+        "Process steps are outlined clearly",
+        "Optional follow-up services are mentioned",
+        "All content is in Spanish"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PilotProgramSection.tsx",
+          "operation": "create",
+          "description": "Create pilot program section component in Spanish promoting entry-level quick scan service for 1-3 IPs/domains, including delivery of executive report and 30-minute prioritization meeting. Display streamlined process: initial contact, SOW signing, 48-hour scan execution, report delivery, and optional remediation follow-up with monthly retainer offerings. Use step-by-step visual layout with prominent CTA for pilot program enrollment."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render PilotProgramSection component after WorkflowSection in the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create Contact section in Spanish with Angel Medina contact details, contact form, and CTA for consultation requests",
+      "acceptanceCriteria": [
+        "Contact section displays Angel Medina's name, email, and phone number",
+        "Contact form includes fields for name, company, email, phone, message",
+        "CTA encourages consultation or pilot scan requests",
+        "All labels and text are in Spanish"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "create",
+          "description": "Create contact section component in Spanish with contact details for Angel Medina (email: angelmedina121215@gmail.com, phone: +52 899 228 4075). Include contact form with fields for name (nombre), company (empresa), email (correo electrónico), phone (teléfono), and message (mensaje). Add clear CTA encouraging potential clients to request consultation or pilot scan. Form submission should display success message without backend storage (frontend-only validation and display)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render ContactSection component after PilotProgramSection as the final section of the landing page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement Spanish language throughout entire website with proper grammar, accents, and professional business terminology",
+      "acceptanceCriteria": [
+        "All website text is in Spanish",
+        "Navigation menu items are in Spanish",
+        "All section headings and body content use Spanish",
+        "Form labels and button text are in Spanish",
+        "Professional Spanish business terminology is used consistently"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure all navigation elements, page titles, and UI text throughout App.tsx use Spanish. Set document language attribute to 'es' for accessibility. Verify all components render Spanish content consistently."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Verify all text content uses proper Spanish grammar, accent marks (á, é, í, ó, ú, ñ), and professional cybersecurity business terminology appropriate for Mexican enterprise audience."
+        },
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Verify all service titles, descriptions, and UI elements use professional Spanish terminology with proper accents and grammar."
+        },
+        {
+          "path": "frontend/src/components/MarketContextSection.tsx",
+          "operation": "modify",
+          "description": "Verify all statistics labels, headings, and explanatory text use professional Spanish with proper grammar and accents."
+        },
+        {
+          "path": "frontend/src/components/TargetClientsSection.tsx",
+          "operation": "modify",
+          "description": "Verify all client segment descriptions and characteristics use professional Spanish business terminology."
+        },
+        {
+          "path": "frontend/src/components/WorkflowSection.tsx",
+          "operation": "modify",
+          "description": "Verify all workflow stage names and process descriptions use professional Spanish technical terminology."
+        },
+        {
+          "path": "frontend/src/components/PilotProgramSection.tsx",
+          "operation": "modify",
+          "description": "Verify all pilot program descriptions, process steps, and CTAs use professional Spanish with proper grammar."
+        },
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Verify all form labels, placeholder text, validation messages, and contact information use professional Spanish with proper accents."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Establish cohesive professional cybersecurity visual design theme with color palette, typography, layout hierarchy, and consistent styling",
+      "acceptanceCriteria": [
+        "Color palette conveys professionalism and security",
+        "Typography is consistent and appropriate for B2B audience",
+        "Layout has clear visual hierarchy and sufficient whitespace",
+        "Design theme is applied consistently across all sections",
+        "Cybersecurity theme is evident in visual elements"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define cohesive visual design theme with professional cybersecurity color palette (avoid generic blue/purple without distinctive accents), consistent typography suitable for B2B consulting firm, and base styling. Implement CSS custom properties for colors, spacing, and typography that convey trust, security, and technological sophistication. Include utility classes for visual hierarchy and whitespace management."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind theme with custom color palette for professional cybersecurity aesthetic, typography scales for B2B audience, spacing utilities for clear visual hierarchy, and design tokens that ensure consistent application across all components. Define colors that convey security and trust with distinctive accent colors."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme using configured Tailwind classes and custom CSS. Ensure hero section establishes strong visual hierarchy with prominent branding and clear CTA. Use cybersecurity-themed styling consistent with overall design system."
+        },
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with professional card layout, appropriate whitespace, and visual hierarchy. Use themed styling for service cards that maintains cybersecurity aesthetic."
+        },
+        {
+          "path": "frontend/src/components/MarketContextSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with prominent typography for statistics, visual hierarchy for data presentation, and professional styling that emphasizes key threat numbers."
+        },
+        {
+          "path": "frontend/src/components/TargetClientsSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with clear visual differentiation between client segments while maintaining cohesive overall aesthetic."
+        },
+        {
+          "path": "frontend/src/components/WorkflowSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with professional visualization of process flow and clear visual hierarchy for workflow stages."
+        },
+        {
+          "path": "frontend/src/components/PilotProgramSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with prominent CTA styling and clear visual hierarchy for program details and process steps."
+        },
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent design theme with professional form styling, clear visual hierarchy for contact information, and accessible form field design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Render all generated images as static assets from frontend/public/assets/generated directory",
+      "acceptanceCriteria": [
+        "Images are loaded from frontend/public/assets/generated path",
+        "Hero background image is displayed",
+        "Service section includes relevant icons or illustrations",
+        "Supporting images enhance content sections as appropriate"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Wire hero background image from frontend/public/assets/generated/hero-bg.dim_1920x1080.png as background for hero section. Use appropriate CSS background properties or img element to display the generated asset."
+        },
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Wire service icon images into service cards: frontend/public/assets/generated/service-asset-registry.dim_256x256.png for Registro de Activos, frontend/public/assets/generated/service-vulnerability.dim_256x256.png for Evaluación de Vulnerabilidades, frontend/public/assets/generated/service-remediation.dim_256x256.png for Remediación, frontend/public/assets/generated/service-segmentation.dim_256x256.png for Segmentación de Redes. Display as card icons or illustrations."
+        },
+        {
+          "path": "frontend/src/components/MarketContextSection.tsx",
+          "operation": "modify",
+          "description": "Wire statistics infographic image from frontend/public/assets/generated/stats-mexico.dim_800x600.png to enhance data visualization in the market context section."
+        },
+        {
+          "path": "frontend/src/components/WorkflowSection.tsx",
+          "operation": "modify",
+          "description": "Wire workflow diagram image from frontend/public/assets/generated/workflow-diagram.dim_1000x600.png to visualize the MAIVOR process flow in the workflow section."
+        }
+      ]
+    }
+  ]
+}

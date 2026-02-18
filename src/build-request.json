@@ -1,0 +1,243 @@
+{
+  "kind": "build_request",
+  "title": "Create Spanish presentation website for BlueFire cybersecurity company",
+  "projectName": "BlueFire",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a hero section with the company name 'BlueFire' prominently displayed, a tagline emphasizing cybersecurity consulting expertise in Mexico, and a primary call-to-action button for contacting or requesting a pilot scan. Include a visually striking hero background image.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "give me a website for presentation of a cybersecurity company in spanish called bluefire"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays 'BlueFire' as the company name",
+        "Tagline conveys cybersecurity consulting focus for Mexican market",
+        "CTA button is prominent and actionable",
+        "Hero background image is rendered from generated assets"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a Services section in Spanish explaining the four core services: Registro de Activos (Asset Registry), Evaluación de Vulnerabilidades (Vulnerability Assessment), Remediación de Vulnerabilidades, and Segmentación de Redes (Network Segmentation). Each service must include a description, why it's necessary in the Mexican context, and key benefits as detailed in the source document.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Servicios de Ciberseguridad (Clientes)",
+          "Registro de Activos (Asset Registry)",
+          "Evaluación de Vulnerabilidades (Vulnerability Assessment)",
+          "Remediación de Vulnerabilidades",
+          "Separación de Redes (Network Segmentation)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four services are displayed with Spanish titles and descriptions",
+        "Each service includes purpose, necessity in Mexican market, and benefits",
+        "Content matches the detailed descriptions from the source document",
+        "Services are presented in a visually organized grid or card layout"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a Market Context section in Spanish highlighting cybersecurity statistics for Mexico: over 40 billion cyberattack attempts in H1 2025, 35,200 million in Q1 2026, 74% of Mexican companies affected by ransomware in 2025, sectors most affected (finance 31%, health 21%, manufacturing 19%), and PYME vulnerability statistics (only 40% have active security protocols despite representing 99.8% of Mexican businesses).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "México enfrentó más de 40 mil millones de intentos de ciberataques en el primer semestre de 2025",
+          "el 74% de las empresas mexicanas fueron afectadas por ransomware ese año",
+          "solo cerca del 40% tienen protocolos de seguridad activos"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Statistics section displays key threat data for Mexico",
+        "Attack volume numbers are prominently displayed (40B+, 35.2B)",
+        "Sector breakdown shows finance, health, and manufacturing percentages",
+        "PYME vulnerability statistics are highlighted",
+        "All content is in Spanish"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a Target Clients section in Spanish differentiating service approach for PYMEs (short sales cycle, standardized services, accessible pricing, simplified deliverables) versus Maquiladoras (long sales cycle, formal SOW and NDA required, professional insurance needed, higher-ticket projects, recurring contracts). Include descriptions of target client types: local PYMEs (retail, logistics, services), manufacturing plants, supply chain providers, and MSPs/IT providers.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Diferenciación: PYMEs vs Maquiladoras",
+          "PYMEs • Ciclo de venta corto (días–semanas)",
+          "Maquiladoras: • Ciclo de venta largo (meses)",
+          "Clientes objetivo: - PYMEs locales (retail, logística, servicios)",
+          "- Maquiladoras y plantas de manufactura"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Two distinct client segments are clearly differentiated",
+        "PYME characteristics are listed (short cycle, standardized, accessible)",
+        "Maquiladora characteristics are listed (long cycle, formal contracts, insurance)",
+        "Target client types are enumerated",
+        "All content is in Spanish"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Workflow Overview section in Spanish explaining the MAIVOR workflow process for Asset Registry, Vulnerability Assessment, Patching, and Network Segmentation. Include key stages: discovery (passive and active), vulnerability scanning, remediation planning, segmentation design, and validation. Emphasize the secure, repeatable methodology for IT/OT environments.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "MAIVOR Workflow: Asset, VA, Patching, Segmentation",
+          "workflow operativo de MAIVOR para ejecutar los servicios de Asset Registry, Vulnerability Assessment, Parcheo de vulnerabilidades y Segmentación de red"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Workflow section explains the four main service processes",
+        "Key stages are outlined: discovery, scanning, remediation, segmentation",
+        "IT/OT environment considerations are mentioned",
+        "Process is presented as secure and repeatable",
+        "All content is in Spanish"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a Pilot Program section in Spanish promoting the entry-level quick scan service for 1-3 IPs/domains, including delivery of executive report and a 30-minute prioritization meeting. Describe the streamlined process: initial contact, SOW signing, 48-hour scan execution, report delivery, and optional remediation follow-up with monthly retainer offerings.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Pilotos y paquetes de entrada: Servicio de escaneo rápido para 1–3 IPs/dominios",
+          "Proceso (workflow) resumido: 1. Contacto inicial",
+          "2. Firma: SOW corto",
+          "3. Ejecución: Escaneo (48 horas)",
+          "4. Entrega: Reporte ejecutivo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Pilot program is prominently featured with service description",
+        "Quick scan scope is specified (1-3 IPs/domains)",
+        "Deliverables are listed (executive report, 30-min meeting)",
+        "Process steps are outlined clearly",
+        "Optional follow-up services are mentioned",
+        "All content is in Spanish"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create a Contact section in Spanish with contact details for Angel Medina: email angelmedina121215@gmail.com and phone +52 899 228 4075. Include a contact form with fields for name, company, email, phone, and message. Add a clear call-to-action encouraging potential clients to request a consultation or pilot scan.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Contacto responsable: Nombre: [Angel Medina] — Email: [angelmedina121215@gmail.com] — Teléfono: [+52 899 228 4075]"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact section displays Angel Medina's name, email, and phone number",
+        "Contact form includes fields for name, company, email, phone, message",
+        "CTA encourages consultation or pilot scan requests",
+        "All labels and text are in Spanish"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement Spanish language throughout the entire website. All navigation, headings, body text, buttons, form labels, and UI elements must be in Spanish. Ensure proper Spanish grammar, accent marks, and professional business terminology appropriate for a cybersecurity consulting firm targeting Mexican enterprises.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "give me a website for presentation of a cybersecurity company in spanish called bluefire"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All website text is in Spanish",
+        "Navigation menu items are in Spanish",
+        "All section headings and body content use Spanish",
+        "Form labels and button text are in Spanish",
+        "Professional Spanish business terminology is used consistently"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Establish a cohesive visual design theme with a professional cybersecurity aesthetic. Use a color palette that conveys trust, security, and technological sophistication (avoid generic blue/purple unless complemented by distinctive accent colors). Implement consistent typography suitable for a B2B consulting firm. Create a modern layout with clear visual hierarchy, ample whitespace, and professional imagery that reflects cybersecurity themes (network security, digital protection, industrial/enterprise environments).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette conveys professionalism and security",
+        "Typography is consistent and appropriate for B2B audience",
+        "Layout has clear visual hierarchy and sufficient whitespace",
+        "Design theme is applied consistently across all sections",
+        "Cybersecurity theme is evident in visual elements"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Render all generated images as static assets from frontend/public/assets/generated. Include the hero background image, service icons or illustrations, and any supporting imagery for market statistics or workflow visualization.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Images are loaded from frontend/public/assets/generated path",
+        "Hero background image is displayed",
+        "Service section includes relevant icons or illustrations",
+        "Supporting images enhance content sections as appropriate"
+      ]
+    }
+  ],
+  "constraints": [
+    "All website content must be in Spanish",
+    "Contact information must match exactly: angelmedina121215@gmail.com and +52 899 228 4075",
+    "Company name must be 'BlueFire'",
+    "Do not include real-time chat, SOC 24/7 features, or WebSocket functionality",
+    "Do not integrate external authentication services beyond Internet Identity"
+  ],
+  "nonGoals": [
+    "Backend data storage or database for contact form submissions",
+    "User authentication or login system",
+    "Admin panel or CMS functionality",
+    "Blog or news section",
+    "Multi-language switching (only Spanish required)",
+    "E-commerce or payment processing",
+    "Real-time chat support",
+    "Integration with external CRM or marketing automation tools"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Modern cybersecurity hero background showing abstract network security visualization with digital lock icons, circuit patterns, and shield elements in dark tones with accent lighting (hero-bg.dim_1920x1080.png)",
+      "Icon illustration for Asset Registry service showing a digital inventory checklist with servers and devices in a clean, professional style (service-asset-registry.dim_256x256.png)",
+      "Icon illustration for Vulnerability Assessment service showing a magnifying glass examining a network diagram with highlighted security gaps (service-vulnerability.dim_256x256.png)",
+      "Icon illustration for Remediation service showing a wrench and shield symbol representing security fixes and hardening (service-remediation.dim_256x256.png)",
+      "Icon illustration for Network Segmentation service showing network topology divided into secure zones with firewall symbols (service-segmentation.dim_256x256.png)",
+      "Infographic-style illustration showing cybersecurity threat statistics for Mexico with data visualization elements (stats-mexico.dim_800x600.png)",
+      "Professional illustration showing IT/OT workflow process with connected stages and security checkpoints (workflow-diagram.dim_1000x600.png)"
+    ],
+    "edits": []
+  }
+}
