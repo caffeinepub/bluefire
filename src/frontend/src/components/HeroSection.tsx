@@ -1,4 +1,3 @@
-import { Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function HeroSection() {
@@ -7,12 +6,16 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-white">
+    <section className="relative min-h-screen flex items-center justify-center bg-white pt-16">
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
-            <Shield className="w-8 h-8 text-primary" />
+          <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
+            <img 
+              src="/assets/file_00000000e32471fd987536c27237c5ae.png" 
+              alt="BlueFire Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <span className="text-2xl font-bold text-primary tracking-wide">BlueFire</span>
           </div>
         </div>

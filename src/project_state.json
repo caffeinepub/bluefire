@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
+  "projectStateVersion": 11,
   "summary": "Spanish-language presentation website for BlueFire cybersecurity company offering Asset Registry, Vulnerability Assessment, Remediation, and Network Segmentation services targeting PYMEs and manufacturing plants in Mexico",
   "architectural_notes": [
     "Single-page presentation website in Spanish",
@@ -138,6 +138,30 @@
         "REQ-16"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-bluefire-logo-shield-with-blue-flames-and-red-network-nodes-to-the-header-navigation-area-in-the-top-left-corner-at-medium-size-positioned-next-to-or-above-the-company-name-text-bluefire",
+      "title": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-bluefire-logo-to-the-hero-section-alongside-the-company-name-bluefire-at-medium-size-ensuring-it-complements-the-existing-hero-layout-and-maintains-visual-hierarchy",
+      "title": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-bluefire-logo-to-the-footer-section-at-medium-size-alongside-the-company-name-ensuring-consistent-branding-across-all-page-sections",
+      "title": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -193,6 +217,20 @@
       "id": "AR-10",
       "summary": "Replace Workflow section with Referral Program section (15-30% commission on first contract, 15% net value after client payment, transfer within 30 days)",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add BlueFire logo (shield with blue flames) in header navigation, hero section alongside company name, and footer in medium size",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Render the BlueFire logo as a static asset from frontend/public/assets/generated using the uploaded logo image files (file_00000000e32471fd987536c27237c5ae.png)",
+      "reqIds": [
+        "REQ-20"
+      ],
       "status": "pending"
     }
   ],

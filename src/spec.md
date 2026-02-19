@@ -1,13 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the Workflow section with a Referral Program section that explains the commission structure in Spanish.
+**Goal:** Add the BlueFire logo to the header navigation, hero section, and footer alongside the company name text.
 
 **Planned changes:**
-- Remove WorkflowSection component from App.tsx
-- Create new ReferralProgramSection component with heading "Programa de Referencias"
-- Display commission structure: 15-30% commission on first contract, 15% of net value from first collected contract, payment after full client payment received, transfer within 30 days after collection
-- Use card or grid layout with icons conveying partnership and financial benefits
-- Maintain cybersecurity design theme and Spanish language throughout
+- Add BlueFire logo (shield with blue flames and red network nodes) to the top-left corner of the header navigation at medium size, positioned next to the "BlueFire" text
+- Add BlueFire logo to the hero section alongside the company name at medium size, maintaining visual hierarchy
+- Add BlueFire logo to the footer section at medium size next to the "BlueFire" text
+- Save and reference the logo as a static asset from frontend/public/assets/generated
 
-**User-visible outcome:** Users will see a Referral Program section instead of the Workflow section, clearly explaining the commission structure and payment terms for referring new clients to BlueFire Cybersecurity.
+**User-visible outcome:** The BlueFire logo appears consistently in the header, hero section, and footer alongside the company name, providing unified branding across all page sections.

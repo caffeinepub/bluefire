@@ -1,5 +1,3 @@
-import { Shield } from 'lucide-react';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const appIdentifier = typeof window !== 'undefined' 
@@ -12,8 +10,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Shield className="w-8 h-8 text-primary" />
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/assets/file_00000000e32471fd987536c27237c5ae.png" 
+                alt="BlueFire Logo" 
+                className="w-8 h-8 object-contain"
+              />
               <span className="text-2xl font-bold text-foreground">BlueFire</span>
             </div>
             <p className="text-sm text-muted-foreground">

@@ -1,76 +1,99 @@
 {
   "kind": "build_request",
-  "title": "Replace Workflow section with Referral Program section",
+  "title": "Add BlueFire logo to header navigation, hero section, and footer",
   "projectName": "BlueFire Cybersecurity",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-14",
-      "text": "Remove the WorkflowSection component from the App.tsx composition and replace it with a new ReferralProgramSection component that displays the referral program information in Spanish",
+      "id": "REQ-17",
+      "text": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-final"
+          "msg-recent-10"
         ],
         "quotes": [
-          "sustituye la parte de flujo de trabajo integrado con el programa de referals"
+          "1.- en todas esas ubicaciones",
+          "2.-debe aparecer junto al texto de nombre de la empresa",
+          "3.- mediano"
         ]
       },
       "acceptanceCriteria": [
-        "WorkflowSection component is no longer rendered in App.tsx",
-        "ReferralProgramSection component is imported and rendered in its place",
-        "The new section appears in the correct position in the page flow"
+        "Logo appears in the header/navigation area",
+        "Logo is positioned in the top-left corner",
+        "Logo size is medium (appropriate for navigation bar)",
+        "Logo appears alongside the 'BlueFire' text, not replacing it"
       ]
     },
     {
-      "id": "REQ-15",
-      "text": "Create a new ReferralProgramSection component that presents the referral program with a heading 'Programa de Referencias' and explains the commission structure: 15-30% commission on the first contract obtained, 15% of the net value of the first contract collected from the referred client, payment after receiving full payment from the client, and transfer within 30 days after collection",
+      "id": "REQ-18",
+      "text": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-final"
+          "msg-recent-10"
         ],
         "quotes": [
-          "15-30% comision por primer contrato conseguido • 15% del valor neto del primer contrato cobrado por cliente referido. • Pago después de recibir el pago completo del cliente. Transferencia dentro de 30 días posteriores al cobro"
+          "1.- en todas esas ubicaciones",
+          "2.-debe aparecer junto al texto de nombre de la empresa",
+          "3.- mediano"
         ]
       },
       "acceptanceCriteria": [
-        "Component displays 'Programa de Referencias' as the section heading",
-        "Shows commission range of 15-30% for first contract obtained",
-        "Clearly states 15% of net value from first collected contract",
-        "Explains payment occurs after receiving full client payment",
-        "Specifies transfer within 30 days after collection",
-        "All text is in Spanish with proper grammar and accent marks",
-        "Visual design is consistent with other sections (cybersecurity theme, proper spacing, typography)"
+        "Logo appears in the hero section",
+        "Logo is placed next to the 'BlueFire' company name text",
+        "Logo size is medium and proportionate to hero section typography",
+        "Logo maintains visual balance with existing hero content (tagline, CTAs, statistics)"
       ]
     },
     {
-      "id": "REQ-16",
-      "text": "Structure the ReferralProgramSection to highlight the commission details prominently using a card or grid layout similar to other sections, with icons or visual elements that convey partnership and financial benefits",
+      "id": "REQ-19",
+      "text": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-final"
+          "msg-recent-10"
+        ],
+        "quotes": [
+          "1.- en todas esas ubicaciones",
+          "2.-debe aparecer junto al texto de nombre de la empresa",
+          "3.- mediano"
         ]
       },
       "acceptanceCriteria": [
-        "Commission structure is presented in an easy-to-scan format (cards, list, or grid)",
-        "Visual hierarchy emphasizes the key benefit (15-30% commission)",
-        "Includes appropriate icons or visual elements",
-        "Layout is responsive and matches the design pattern of ServicesSection or TargetClientsSection"
+        "Logo appears in the footer section",
+        "Logo is placed next to the 'BlueFire' text in the footer",
+        "Logo size is medium and consistent with other footer elements",
+        "Logo maintains visual consistency with header and hero placements"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Render the BlueFire logo as a static asset from frontend/public/assets/generated using the uploaded logo image files (file_00000000e32471fd987536c27237c5ae.png)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent-10"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Logo image is saved as a static asset in frontend/public/assets/generated directory",
+        "Logo is referenced consistently across header, hero, and footer components",
+        "Logo loads efficiently without external dependencies",
+        "Logo maintains transparent background and original quality"
       ]
     }
   ],
   "constraints": [
-    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui components",
-    "Maintain the existing cybersecurity design theme with consistent color palette and typography",
-    "All content must be in Spanish with proper grammar and professional business terminology"
+    "Logo must appear alongside the company name text, not replace it",
+    "Logo size must be medium across all three locations",
+    "Logo must be rendered as a static asset from frontend/public/assets/generated"
   ],
   "nonGoals": [
-    "Creating a functional referral tracking system or backend logic",
-    "Adding a form for referral sign-up or submission",
-    "Integrating payment processing for referral commissions",
-    "Modifying the WorkflowSection component itself (it should be removed from App.tsx, not edited)"
+    "Creating animated or interactive logo variations",
+    "Implementing logo click interactions or navigation behavior",
+    "Adding logo variants for different screen sizes beyond responsive sizing",
+    "Replacing the company name text with logo-only branding"
   ],
   "imageRequirements": {
     "required": [],

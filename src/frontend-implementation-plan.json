@@ -1,58 +1,78 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace Workflow section with Referral Program section",
+  "title": "Add BlueFire logo to header navigation, hero section, and footer",
   "requirements": [
     {
-      "id": "REQ-14",
-      "summary": "Remove WorkflowSection from App.tsx and replace with ReferralProgramSection component",
+      "id": "REQ-17",
+      "summary": "Add BlueFire logo to header navigation in top-left corner at medium size alongside company name",
       "acceptanceCriteria": [
-        "WorkflowSection component is no longer rendered in App.tsx",
-        "ReferralProgramSection component is imported and rendered in its place",
-        "The new section appears in the correct position in the page flow"
+        "Logo appears in the header/navigation area",
+        "Logo is positioned in the top-left corner",
+        "Logo size is medium (appropriate for navigation bar)",
+        "Logo appears alongside the 'BlueFire' text, not replacing it"
       ],
       "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create a new Header component with navigation bar containing the BlueFire logo from frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png positioned in the top-left corner at medium size (approximately 40-48px height) alongside the 'BlueFire' company name text. Implement responsive design for mobile and desktop viewports using Tailwind CSS classes consistent with the existing cybersecurity theme."
+        },
         {
           "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Remove the WorkflowSection import and component usage from the main application composition. Import the new ReferralProgramSection component and render it in the same position where WorkflowSection was previously located (between TargetClientsSection and PilotProgramSection). Maintain the existing section order and ensure proper component composition."
+          "description": "Import and add the new Header component at the top of the App component, before the HeroSection, to establish the navigation bar across all pages. Ensure proper spacing and layout integration with existing sections."
         }
       ]
     },
     {
-      "id": "REQ-15",
-      "summary": "Create ReferralProgramSection component displaying commission structure and program details in Spanish",
+      "id": "REQ-18",
+      "summary": "Add BlueFire logo to hero section at medium size alongside company name while maintaining visual hierarchy",
       "acceptanceCriteria": [
-        "Component displays 'Programa de Referencias' as the section heading",
-        "Shows commission range of 15-30% for first contract obtained",
-        "Clearly states 15% of net value from first collected contract",
-        "Explains payment occurs after receiving full client payment",
-        "Specifies transfer within 30 days after collection",
-        "All text is in Spanish with proper grammar and accent marks",
-        "Visual design is consistent with other sections (cybersecurity theme, proper spacing, typography)"
+        "Logo appears in the hero section",
+        "Logo is placed next to the 'BlueFire' company name text",
+        "Logo size is medium and proportionate to hero section typography",
+        "Logo maintains visual balance with existing hero content (tagline, CTAs, statistics)"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ReferralProgramSection.tsx",
-          "operation": "create",
-          "description": "Create a new React functional component that displays the referral program information. Include a section heading 'Programa de Referencias' using typography consistent with other sections (likely h2 with appropriate Tailwind classes). Present the commission structure details: 15-30% commission range for first contract obtained, 15% of net value from first collected contract, payment after receiving full client payment, and transfer within 30 days after collection. Use Spanish text throughout with proper accent marks (comisión, después, días). Apply the cybersecurity design theme using the existing color palette (primary, secondary colors from CSS variables) and maintain consistent spacing, padding, and typography patterns found in ServicesSection and TargetClientsSection."
-        }
-      ]
-    },
-    {
-      "id": "REQ-16",
-      "summary": "Structure ReferralProgramSection with prominent commission details using card/grid layout with partnership-themed visual elements",
-      "acceptanceCriteria": [
-        "Commission structure is presented in an easy-to-scan format (cards, list, or grid)",
-        "Visual hierarchy emphasizes the key benefit (15-30% commission)",
-        "Includes appropriate icons or visual elements",
-        "Layout is responsive and matches the design pattern of ServicesSection or TargetClientsSection"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ReferralProgramSection.tsx",
+          "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Enhance the ReferralProgramSection component layout to use a card-based or grid layout pattern similar to ServicesSection (which uses a grid of four service cards). Structure the commission details in an easy-to-scan format using individual cards or list items for each commission point. Emphasize the 15-30% commission benefit with larger text, bold styling, or prominent placement. Add appropriate icons from lucide-react (such as Users, Handshake, DollarSign, TrendingUp, or Clock) that convey partnership and financial benefits. Ensure the layout is fully responsive using Tailwind's responsive utilities (sm:, md:, lg: breakpoints) and matches the spacing, card styling, and visual hierarchy patterns established in other sections. Use rounded corners, subtle shadows or borders, and proper padding consistent with the cybersecurity design theme."
+          "description": "Modify the HeroSection component to include the BlueFire logo from frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png at medium size (approximately 48-64px height) positioned alongside the 'BlueFire' company name text in the heading area. Adjust the layout to maintain visual hierarchy with the existing tagline, CTAs, and statistics. Use flexbox or grid layout to position the logo and text together, ensuring responsive behavior on mobile and desktop viewports."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Add BlueFire logo to footer at medium size alongside company name for consistent branding",
+      "acceptanceCriteria": [
+        "Logo appears in the footer section",
+        "Logo is placed next to the 'BlueFire' text in the footer",
+        "Logo size is medium and consistent with other footer elements",
+        "Logo maintains visual consistency with header and hero placements"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Modify the Footer component to include the BlueFire logo from frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png at medium size (approximately 32-40px height) positioned alongside the 'BlueFire' company name text in the branding area. Ensure the logo maintains visual consistency with the header and hero implementations, and integrates seamlessly with existing footer content (services list, contact information, copyright)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Ensure BlueFire logo is properly referenced as a static asset from the uploaded image file",
+      "acceptanceCriteria": [
+        "Logo image is saved as a static asset in frontend/public/assets/generated directory",
+        "Logo is referenced consistently across header, hero, and footer components",
+        "Logo loads efficiently without external dependencies",
+        "Logo maintains transparent background and original quality"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png",
+          "operation": "create",
+          "description": "Ensure the uploaded BlueFire logo image (shield with blue flames and red network nodes) is available as a static asset at frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png. Verify the image maintains its transparent background and original quality. This file will be referenced by the Header, HeroSection, and Footer components using the path '/assets/file_00000000e32471fd987536c27237c5ae.png'."
         }
       ]
     }

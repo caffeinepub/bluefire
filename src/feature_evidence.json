@@ -2,10 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-workflowsection-component-from-the-app-tsx-composition-and-replace-it-with-a-new-referralprogramsection-component-that-displays-the-referral-program-information-in-spanish",
-      "featureTitle": "Remove the WorkflowSection component from the App.tsx composition and replace it with a new ReferralProgramSection component that displays the referral program information in Spanish",
+      "featureId": "feature-add-the-bluefire-logo-shield-with-blue-flames-and-red-network-nodes-to-the-header-navigation-area-in-the-top-left-corner-at-medium-size-positioned-next-to-or-above-the-company-name-text-bluefire",
+      "featureTitle": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
       "files": [
-        "frontend/src/App.tsx"
+        "frontend/src/App.tsx",
+        "frontend/src/components/Header.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,15 +16,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-14"
+        "REQ-17"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-new-referralprogramsection-component-that-presents-the-referral-program-with-a-heading-programa-de-referencias-and-explains-the-commission-structure-15-30-commission-on-the-first-contract-obtained-15-of-the-net-value-of-the-first-contract-collected-from-the-referred-client-payment-after-receiving-full-payment-from-the-client-and-transfer-within-30-days-after-collection",
-      "featureTitle": "Create a new ReferralProgramSection component that presents the referral program with a heading 'Programa de Referencias' and explains the commission structure: 15-30% commission on the first contract obtained, 15% of the net value of the first contract collected from the referred client, payment after receiving full payment from the client, and transfer within 30 days after collection",
+      "featureId": "feature-add-the-bluefire-logo-to-the-hero-section-alongside-the-company-name-bluefire-at-medium-size-ensuring-it-complements-the-existing-hero-layout-and-maintains-visual-hierarchy",
+      "featureTitle": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
       "files": [
-        "frontend/src/components/ReferralProgramSection.tsx"
+        "frontend/src/components/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -33,15 +34,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-15"
+        "REQ-18"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-structure-the-referralprogramsection-to-highlight-the-commission-details-prominently-using-a-card-or-grid-layout-similar-to-other-sections-with-icons-or-visual-elements-that-convey-partnership-and-financial-benefits",
-      "featureTitle": "Structure the ReferralProgramSection to highlight the commission details prominently using a card or grid layout similar to other sections, with icons or visual elements that convey partnership and financial benefits",
+      "featureId": "feature-add-the-bluefire-logo-to-the-footer-section-at-medium-size-alongside-the-company-name-ensuring-consistent-branding-across-all-page-sections",
+      "featureTitle": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
       "files": [
-        "frontend/src/components/ReferralProgramSection.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -51,7 +52,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-16"
+        "REQ-19"
       ],
       "confidence": "high"
     }
