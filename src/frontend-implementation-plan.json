@@ -1,36 +1,58 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove scroll effect and change hero background to white",
+  "title": "Replace Workflow section with Referral Program section",
   "requirements": [
     {
-      "id": "REQ-11",
-      "summary": "Remove scroll-based parallax or animation effects from the homepage hero section",
+      "id": "REQ-14",
+      "summary": "Remove WorkflowSection from App.tsx and replace with ReferralProgramSection component",
       "acceptanceCriteria": [
-        "Hero section no longer has scroll-triggered animations or parallax effects",
-        "Content remains static during page scroll"
+        "WorkflowSection component is no longer rendered in App.tsx",
+        "ReferralProgramSection component is imported and rendered in its place",
+        "The new section appears in the correct position in the page flow"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HeroSection.tsx",
+          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Remove any scroll event listeners, parallax effects, transform animations, or CSS classes that trigger on scroll. Remove any useEffect hooks monitoring scroll position. Ensure all hero content remains static during page scroll while preserving existing Spanish text and CTAs."
+          "description": "Remove the WorkflowSection import and component usage from the main application composition. Import the new ReferralProgramSection component and render it in the same position where WorkflowSection was previously located (between TargetClientsSection and PilotProgramSection). Maintain the existing section order and ensure proper component composition."
         }
       ]
     },
     {
-      "id": "REQ-12",
-      "summary": "Change hero section background to white for improved text readability",
+      "id": "REQ-15",
+      "summary": "Create ReferralProgramSection component displaying commission structure and program details in Spanish",
       "acceptanceCriteria": [
-        "Hero section background is white or very light colored",
-        "All text in the hero section has sufficient contrast and is easily readable",
-        "The hero background image is no longer visible or has been replaced with a solid white background"
+        "Component displays 'Programa de Referencias' as the section heading",
+        "Shows commission range of 15-30% for first contract obtained",
+        "Clearly states 15% of net value from first collected contract",
+        "Explains payment occurs after receiving full client payment",
+        "Specifies transfer within 30 days after collection",
+        "All text is in Spanish with proper grammar and accent marks",
+        "Visual design is consistent with other sections (cybersecurity theme, proper spacing, typography)"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HeroSection.tsx",
+          "path": "frontend/src/components/ReferralProgramSection.tsx",
+          "operation": "create",
+          "description": "Create a new React functional component that displays the referral program information. Include a section heading 'Programa de Referencias' using typography consistent with other sections (likely h2 with appropriate Tailwind classes). Present the commission structure details: 15-30% commission range for first contract obtained, 15% of net value from first collected contract, payment after receiving full client payment, and transfer within 30 days after collection. Use Spanish text throughout with proper accent marks (comisión, después, días). Apply the cybersecurity design theme using the existing color palette (primary, secondary colors from CSS variables) and maintain consistent spacing, padding, and typography patterns found in ServicesSection and TargetClientsSection."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Structure ReferralProgramSection with prominent commission details using card/grid layout with partnership-themed visual elements",
+      "acceptanceCriteria": [
+        "Commission structure is presented in an easy-to-scan format (cards, list, or grid)",
+        "Visual hierarchy emphasizes the key benefit (15-30% commission)",
+        "Includes appropriate icons or visual elements",
+        "Layout is responsive and matches the design pattern of ServicesSection or TargetClientsSection"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReferralProgramSection.tsx",
           "operation": "modify",
-          "description": "Replace the hero background image overlay (currently using frontend/public/assets/generated/hero-bg.dim_1920x1080.png) with a solid white background. Remove or comment out any background-image CSS properties or img tags referencing the hero background. Set background-color to white or a very light color (e.g., bg-white). Adjust text colors if needed to ensure sufficient contrast against the white background while preserving all existing Spanish content."
+          "description": "Enhance the ReferralProgramSection component layout to use a card-based or grid layout pattern similar to ServicesSection (which uses a grid of four service cards). Structure the commission details in an easy-to-scan format using individual cards or list items for each commission point. Emphasize the 15-30% commission benefit with larger text, bold styling, or prominent placement. Add appropriate icons from lucide-react (such as Users, Handshake, DollarSign, TrendingUp, or Clock) that convey partnership and financial benefits. Ensure the layout is fully responsive using Tailwind's responsive utilities (sm:, md:, lg: breakpoints) and matches the spacing, card styling, and visual hierarchy patterns established in other sections. Use rounded corners, subtle shadows or borders, and proper padding consistent with the cybersecurity design theme."
         }
       ]
     }

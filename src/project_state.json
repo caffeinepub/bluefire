@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 9,
   "summary": "Spanish-language presentation website for BlueFire cybersecurity company offering Asset Registry, Vulnerability Assessment, Remediation, and Network Segmentation services targeting PYMEs and manufacturing plants in Mexico",
   "architectural_notes": [
     "Single-page presentation website in Spanish",
     "Focus on cybersecurity consulting services for Mexican market",
     "Responsive design for desktop and mobile",
-    "Sections: Hero, Services, Market Context, Target Clients, Workflow, Contact"
+    "Referral program section replaces workflow overview"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -106,6 +106,38 @@
         "REQ-12"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-marketcontextsection-component-replace-the-current-static-affected-sectors-image-with-an-interactive-circular-chart-pie-chart-visualization-displaying-the-sector-breakdown-finance-31-health-21-manufacturing-19-and-other-29",
+      "title": "In the MarketContextSection component, replace the current static affected sectors image with an interactive circular chart (pie chart) visualization displaying the sector breakdown: Finance 31%, Health 21%, Manufacturing 19%, and Other 29%",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-workflowsection-component-from-the-app-tsx-composition-and-replace-it-with-a-new-referralprogramsection-component-that-displays-the-referral-program-information-in-spanish",
+      "title": "Remove the WorkflowSection component from the App.tsx composition and replace it with a new ReferralProgramSection component that displays the referral program information in Spanish",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-referralprogramsection-component-that-presents-the-referral-program-with-a-heading-programa-de-referencias-and-explains-the-commission-structure-15-30-commission-on-the-first-contract-obtained-15-of-the-net-value-of-the-first-contract-collected-from-the-referred-client-payment-after-receiving-full-payment-from-the-client-and-transfer-within-30-days-after-collection",
+      "title": "Create a new ReferralProgramSection component that presents the referral program with a heading 'Programa de Referencias' and explains the commission structure: 15-30% commission on the first contract obtained, 15% of the net value of the first contract collected from the referred client, payment after receiving full payment from the client, and transfer within 30 days after collection",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-structure-the-referralprogramsection-to-highlight-the-commission-details-prominently-using-a-card-or-grid-layout-similar-to-other-sections-with-icons-or-visual-elements-that-convey-partnership-and-financial-benefits",
+      "title": "Structure the ReferralProgramSection to highlight the commission details prominently using a card or grid layout similar to other sections, with icons or visual elements that convey partnership and financial benefits",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -134,12 +166,6 @@
       "status": "pending"
     },
     {
-      "id": "AR-5",
-      "summary": "Workflow overview section explaining Asset, VA, Patching, Segmentation process",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
       "id": "AR-6",
       "summary": "Contact section with Angel Medina details (email, phone)",
       "reqIds": [],
@@ -154,6 +180,18 @@
     {
       "id": "AR-8",
       "summary": "Professional, modern cybersecurity design with Spanish language throughout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Replace affected sectors image with a circular chart/pie chart visualization",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Replace Workflow section with Referral Program section (15-30% commission on first contract, 15% net value after client payment, transfer within 30 days)",
       "reqIds": [],
       "status": "pending"
     }

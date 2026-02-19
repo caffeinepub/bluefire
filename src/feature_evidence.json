@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-any-scroll-based-parallax-or-animation-effects-from-the-homepage-hero-section",
-      "featureTitle": "Remove any scroll-based parallax or animation effects from the homepage hero section",
+      "featureId": "feature-remove-the-workflowsection-component-from-the-app-tsx-composition-and-replace-it-with-a-new-referralprogramsection-component-that-displays-the-referral-program-information-in-spanish",
+      "featureTitle": "Remove the WorkflowSection component from the App.tsx composition and replace it with a new ReferralProgramSection component that displays the referral program information in Spanish",
       "files": [
-        "frontend/src/components/HeroSection.tsx"
+        "frontend/src/App.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,15 +15,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-11"
+        "REQ-14"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-change-the-hero-section-background-image-to-a-white-blank-background-to-improve-text-readability",
-      "featureTitle": "Change the hero section background image to a white/blank background to improve text readability",
+      "featureId": "feature-create-a-new-referralprogramsection-component-that-presents-the-referral-program-with-a-heading-programa-de-referencias-and-explains-the-commission-structure-15-30-commission-on-the-first-contract-obtained-15-of-the-net-value-of-the-first-contract-collected-from-the-referred-client-payment-after-receiving-full-payment-from-the-client-and-transfer-within-30-days-after-collection",
+      "featureTitle": "Create a new ReferralProgramSection component that presents the referral program with a heading 'Programa de Referencias' and explains the commission structure: 15-30% commission on the first contract obtained, 15% of the net value of the first contract collected from the referred client, payment after receiving full payment from the client, and transfer within 30 days after collection",
       "files": [
-        "frontend/src/components/HeroSection.tsx"
+        "frontend/src/components/ReferralProgramSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -33,7 +33,25 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-12"
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-structure-the-referralprogramsection-to-highlight-the-commission-details-prominently-using-a-card-or-grid-layout-similar-to-other-sections-with-icons-or-visual-elements-that-convey-partnership-and-financial-benefits",
+      "featureTitle": "Structure the ReferralProgramSection to highlight the commission details prominently using a card or grid layout similar to other sections, with icons or visual elements that convey partnership and financial benefits",
+      "files": [
+        "frontend/src/components/ReferralProgramSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
       ],
       "confidence": "high"
     }

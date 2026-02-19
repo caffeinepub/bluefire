@@ -2,7 +2,7 @@ import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import MarketContextSection from './components/MarketContextSection';
 import TargetClientsSection from './components/TargetClientsSection';
-import WorkflowSection from './components/WorkflowSection';
+import ReferralProgramSection from './components/ReferralProgramSection';
 import PilotProgramSection from './components/PilotProgramSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ function App() {
       <ServicesSection />
       <MarketContextSection />
       <TargetClientsSection />
-      <WorkflowSection />
+      <ReferralProgramSection />
       <PilotProgramSection />
       <ContactSection />
       <Footer />

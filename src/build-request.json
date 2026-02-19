@@ -1,54 +1,76 @@
 {
   "kind": "build_request",
-  "title": "Remove scroll effect and change hero background to white",
-  "projectName": "BlueFire",
+  "title": "Replace Workflow section with Referral Program section",
+  "projectName": "BlueFire Cybersecurity",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-11",
-      "text": "Remove any scroll-based parallax or animation effects from the homepage hero section",
+      "id": "REQ-14",
+      "text": "Remove the WorkflowSection component from the App.tsx composition and replace it with a new ReferralProgramSection component that displays the referral program information in Spanish",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-final"
         ],
         "quotes": [
-          "quita el efecto de scroll en la pagina de inicio"
+          "sustituye la parte de flujo de trabajo integrado con el programa de referals"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section no longer has scroll-triggered animations or parallax effects",
-        "Content remains static during page scroll"
+        "WorkflowSection component is no longer rendered in App.tsx",
+        "ReferralProgramSection component is imported and rendered in its place",
+        "The new section appears in the correct position in the page flow"
       ]
     },
     {
-      "id": "REQ-12",
-      "text": "Change the hero section background image to a white/blank background to improve text readability",
+      "id": "REQ-15",
+      "text": "Create a new ReferralProgramSection component that presents the referral program with a heading 'Programa de Referencias' and explains the commission structure: 15-30% commission on the first contract obtained, 15% of the net value of the first contract collected from the referred client, payment after receiving full payment from the client, and transfer within 30 days after collection",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-final"
         ],
         "quotes": [
-          "deja la imagen de fondo en blanco para que todo sea mas legible"
+          "15-30% comision por primer contrato conseguido • 15% del valor neto del primer contrato cobrado por cliente referido. • Pago después de recibir el pago completo del cliente. Transferencia dentro de 30 días posteriores al cobro"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section background is white or very light colored",
-        "All text in the hero section has sufficient contrast and is easily readable",
-        "The hero background image is no longer visible or has been replaced with a solid white background"
+        "Component displays 'Programa de Referencias' as the section heading",
+        "Shows commission range of 15-30% for first contract obtained",
+        "Clearly states 15% of net value from first collected contract",
+        "Explains payment occurs after receiving full client payment",
+        "Specifies transfer within 30 days after collection",
+        "All text is in Spanish with proper grammar and accent marks",
+        "Visual design is consistent with other sections (cybersecurity theme, proper spacing, typography)"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Structure the ReferralProgramSection to highlight the commission details prominently using a card or grid layout similar to other sections, with icons or visual elements that convey partnership and financial benefits",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-final"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Commission structure is presented in an easy-to-scan format (cards, list, or grid)",
+        "Visual hierarchy emphasizes the key benefit (15-30% commission)",
+        "Includes appropriate icons or visual elements",
+        "Layout is responsive and matches the design pattern of ServicesSection or TargetClientsSection"
       ]
     }
   ],
   "constraints": [
-    "Do not modify backend/main.mo",
-    "Do not edit files in frontend/src/hooks/ or frontend/src/components/ui/",
-    "Preserve all existing Spanish text and content in the hero section"
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui components",
+    "Maintain the existing cybersecurity design theme with consistent color palette and typography",
+    "All content must be in Spanish with proper grammar and professional business terminology"
   ],
   "nonGoals": [
-    "Changing text content or CTAs in the hero section",
-    "Modifying other sections beyond the hero",
-    "Adding new animations or effects"
+    "Creating a functional referral tracking system or backend logic",
+    "Adding a form for referral sign-up or submission",
+    "Integrating payment processing for referral commissions",
+    "Modifying the WorkflowSection component itself (it should be removed from App.tsx, not edited)"
   ],
   "imageRequirements": {
     "required": [],

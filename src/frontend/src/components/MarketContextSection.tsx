@@ -1,4 +1,5 @@
 import { AlertTriangle, TrendingUp, Building2, Shield } from 'lucide-react';
+import SectorChart from './SectorChart';
 
 const stats = [
   {
@@ -64,7 +65,7 @@ export default function MarketContextSection() {
           })}
         </div>
 
-        {/* Sectors and Image */}
+        {/* Sectors and Chart */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <h3 className="text-2xl font-bold mb-6 text-foreground">
@@ -97,11 +98,7 @@ export default function MarketContextSection() {
           </div>
 
           <div className="flex justify-center">
-            <img 
-              src="/assets/generated/stats-mexico.dim_800x600.png"
-              alt="Estadísticas de ciberseguridad en México"
-              className="rounded-lg shadow-2xl border-2 border-border w-full max-w-md"
-            />
+            <SectorChart data={sectors} />
           </div>
         </div>
       </div>
