@@ -1,99 +1,73 @@
 {
   "kind": "build_request",
-  "title": "Add BlueFire logo to header navigation, hero section, and footer",
+  "title": "Increase BlueFire logo size across all locations",
   "projectName": "BlueFire Cybersecurity",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-17",
-      "text": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
+      "id": "REQ-21",
+      "text": "In the Header component (frontend/src/components/Header.tsx), increase the BlueFire logo size from 40px to 64px by updating the img element's width and height attributes",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-recent-10"
+          "msg-5"
         ],
         "quotes": [
-          "1.- en todas esas ubicaciones",
-          "2.-debe aparecer junto al texto de nombre de la empresa",
-          "3.- mediano"
+          "hazlo mas grande en todas las ubicaciones"
         ]
       },
       "acceptanceCriteria": [
-        "Logo appears in the header/navigation area",
-        "Logo is positioned in the top-left corner",
-        "Logo size is medium (appropriate for navigation bar)",
-        "Logo appears alongside the 'BlueFire' text, not replacing it"
+        "Logo in header navigation displays at 64px width and height",
+        "Logo maintains aspect ratio and visual quality at larger size",
+        "Logo remains properly aligned with the company name text"
       ]
     },
     {
-      "id": "REQ-18",
-      "text": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
+      "id": "REQ-22",
+      "text": "In the HeroSection component (frontend/src/components/HeroSection.tsx), increase the BlueFire logo size from 48px to 80px by updating the img element's width and height attributes in the badge section",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-recent-10"
+          "msg-5"
         ],
         "quotes": [
-          "1.- en todas esas ubicaciones",
-          "2.-debe aparecer junto al texto de nombre de la empresa",
-          "3.- mediano"
+          "hazlo mas grande en todas las ubicaciones"
         ]
       },
       "acceptanceCriteria": [
-        "Logo appears in the hero section",
-        "Logo is placed next to the 'BlueFire' company name text",
-        "Logo size is medium and proportionate to hero section typography",
-        "Logo maintains visual balance with existing hero content (tagline, CTAs, statistics)"
+        "Logo in hero section displays at 80px width and height",
+        "Logo remains properly positioned within the badge container",
+        "Logo maintains visual hierarchy with the company name and tagline"
       ]
     },
     {
-      "id": "REQ-19",
-      "text": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
+      "id": "REQ-23",
+      "text": "In the Footer component (frontend/src/components/Footer.tsx), increase the BlueFire logo size from 32px to 56px by updating the img element's width and height attributes",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-recent-10"
+          "msg-5"
         ],
         "quotes": [
-          "1.- en todas esas ubicaciones",
-          "2.-debe aparecer junto al texto de nombre de la empresa",
-          "3.- mediano"
+          "hazlo mas grande en todas las ubicaciones"
         ]
       },
       "acceptanceCriteria": [
-        "Logo appears in the footer section",
-        "Logo is placed next to the 'BlueFire' text in the footer",
-        "Logo size is medium and consistent with other footer elements",
-        "Logo maintains visual consistency with header and hero placements"
-      ]
-    },
-    {
-      "id": "REQ-20",
-      "text": "Render the BlueFire logo as a static asset from frontend/public/assets/generated using the uploaded logo image files (file_00000000e32471fd987536c27237c5ae.png)",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-recent-10"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Logo image is saved as a static asset in frontend/public/assets/generated directory",
-        "Logo is referenced consistently across header, hero, and footer components",
-        "Logo loads efficiently without external dependencies",
-        "Logo maintains transparent background and original quality"
+        "Logo in footer displays at 56px width and height",
+        "Logo maintains proper alignment with surrounding footer content",
+        "Footer layout remains balanced with the larger logo size"
       ]
     }
   ],
   "constraints": [
-    "Logo must appear alongside the company name text, not replace it",
-    "Logo size must be medium across all three locations",
-    "Logo must be rendered as a static asset from frontend/public/assets/generated"
+    "Do not change the logo image file itself, only adjust the display dimensions",
+    "Maintain the existing logo positioning and alignment patterns in each component",
+    "Preserve all other styling and layout properties in the affected components"
   ],
   "nonGoals": [
-    "Creating animated or interactive logo variations",
-    "Implementing logo click interactions or navigation behavior",
-    "Adding logo variants for different screen sizes beyond responsive sizing",
-    "Replacing the company name text with logo-only branding"
+    "Modifying the logo design or colors",
+    "Changing the logo file path or source location",
+    "Altering any other component styling beyond logo dimensions"
   ],
   "imageRequirements": {
     "required": [],

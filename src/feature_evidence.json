@@ -2,10 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-bluefire-logo-shield-with-blue-flames-and-red-network-nodes-to-the-header-navigation-area-in-the-top-left-corner-at-medium-size-positioned-next-to-or-above-the-company-name-text-bluefire",
-      "featureTitle": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
+      "featureId": "feature-in-the-header-component-frontend-src-components-header-tsx-increase-the-bluefire-logo-size-from-40px-to-64px-by-updating-the-img-element-s-width-and-height-attributes",
+      "featureTitle": "In the Header component (frontend/src/components/Header.tsx), increase the BlueFire logo size from 40px to 64px by updating the img element's width and height attributes",
       "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/Header.tsx"
       ],
       "components": [
@@ -16,13 +15,13 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-17"
+        "REQ-21"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-add-the-bluefire-logo-to-the-hero-section-alongside-the-company-name-bluefire-at-medium-size-ensuring-it-complements-the-existing-hero-layout-and-maintains-visual-hierarchy",
-      "featureTitle": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
+      "featureId": "feature-in-the-herosection-component-frontend-src-components-herosection-tsx-increase-the-bluefire-logo-size-from-48px-to-80px-by-updating-the-img-element-s-width-and-height-attributes-in-the-badge-section",
+      "featureTitle": "In the HeroSection component (frontend/src/components/HeroSection.tsx), increase the BlueFire logo size from 48px to 80px by updating the img element's width and height attributes in the badge section",
       "files": [
         "frontend/src/components/HeroSection.tsx"
       ],
@@ -34,13 +33,13 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-18"
+        "REQ-22"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-add-the-bluefire-logo-to-the-footer-section-at-medium-size-alongside-the-company-name-ensuring-consistent-branding-across-all-page-sections",
-      "featureTitle": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
+      "featureId": "feature-in-the-footer-component-frontend-src-components-footer-tsx-increase-the-bluefire-logo-size-from-32px-to-56px-by-updating-the-img-element-s-width-and-height-attributes",
+      "featureTitle": "In the Footer component (frontend/src/components/Footer.tsx), increase the BlueFire logo size from 32px to 56px by updating the img element's width and height attributes",
       "files": [
         "frontend/src/components/Footer.tsx"
       ],
@@ -52,7 +51,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-19"
+        "REQ-23"
       ],
       "confidence": "high"
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 11,
+  "projectStateVersion": 13,
   "summary": "Spanish-language presentation website for BlueFire cybersecurity company offering Asset Registry, Vulnerability Assessment, Remediation, and Network Segmentation services targeting PYMEs and manufacturing plants in Mexico",
   "architectural_notes": [
     "Single-page presentation website in Spanish",
@@ -162,6 +162,30 @@
         "REQ-19"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-header-component-frontend-src-components-header-tsx-increase-the-bluefire-logo-size-from-40px-to-64px-by-updating-the-img-element-s-width-and-height-attributes",
+      "title": "In the Header component (frontend/src/components/Header.tsx), increase the BlueFire logo size from 40px to 64px by updating the img element's width and height attributes",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-herosection-component-frontend-src-components-herosection-tsx-increase-the-bluefire-logo-size-from-48px-to-80px-by-updating-the-img-element-s-width-and-height-attributes-in-the-badge-section",
+      "title": "In the HeroSection component (frontend/src/components/HeroSection.tsx), increase the BlueFire logo size from 48px to 80px by updating the img element's width and height attributes in the badge section",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-footer-component-frontend-src-components-footer-tsx-increase-the-bluefire-logo-size-from-32px-to-56px-by-updating-the-img-element-s-width-and-height-attributes",
+      "title": "In the Footer component (frontend/src/components/Footer.tsx), increase the BlueFire logo size from 32px to 56px by updating the img element's width and height attributes",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -231,6 +255,12 @@
       "reqIds": [
         "REQ-20"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Increase BlueFire logo size in all locations (header, hero section, footer)",
+      "reqIds": [],
       "status": "pending"
     }
   ],

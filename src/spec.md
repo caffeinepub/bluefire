@@ -1,12 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Add the BlueFire logo to the header navigation, hero section, and footer alongside the company name text.
+**Goal:** Increase the BlueFire logo size across all locations in the application.
 
 **Planned changes:**
-- Add BlueFire logo (shield with blue flames and red network nodes) to the top-left corner of the header navigation at medium size, positioned next to the "BlueFire" text
-- Add BlueFire logo to the hero section alongside the company name at medium size, maintaining visual hierarchy
-- Add BlueFire logo to the footer section at medium size next to the "BlueFire" text
-- Save and reference the logo as a static asset from frontend/public/assets/generated
+- Increase logo size in Header component from 40px to 64px
+- Increase logo size in HeroSection component from 48px to 80px
+- Increase logo size in Footer component from 32px to 56px
 
-**User-visible outcome:** The BlueFire logo appears consistently in the header, hero section, and footer alongside the company name, providing unified branding across all page sections.
+**User-visible outcome:** The BlueFire logo will appear larger and more prominent throughout the website in the header navigation, hero section, and footer.

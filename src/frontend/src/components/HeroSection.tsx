@@ -14,7 +14,7 @@ export default function HeroSection() {
             <img 
               src="/assets/file_00000000e32471fd987536c27237c5ae.png" 
               alt="BlueFire Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-20 h-20 object-contain"
             />
             <span className="text-2xl font-bold text-primary tracking-wide">BlueFire</span>
           </div>

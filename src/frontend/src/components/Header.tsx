@@ -12,7 +12,7 @@ export default function Header() {
             <img 
               src="/assets/file_00000000e32471fd987536c27237c5ae.png" 
               alt="BlueFire Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-16 h-16 object-contain"
             />
             <span className="text-xl font-bold text-primary">BlueFire</span>
           </div>

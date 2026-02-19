@@ -1,31 +1,29 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-19T01:25:47.606Z",
+  "generatedAt": "2026-02-19T01:30:15.424Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
+    "total": 3,
     "implemented": 3,
     "items": [
       {
-        "id": "REQ-17",
-        "summary": "Add the BlueFire logo (shield with blue flames and red network nodes) to the header navigation area in the top-left corner at medium size, positioned next to or above the company name text 'BlueFire'",
+        "id": "REQ-21",
+        "summary": "In the Header component (frontend/src/components/Header.tsx), increase the BlueFire logo size from 40px to 64px by updating the img element's width and height attributes",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/components/Header.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/components/Header.tsx"
         ]
       },
       {
-        "id": "REQ-18",
-        "summary": "Add the BlueFire logo to the hero section alongside the company name 'BlueFire' at medium size, ensuring it complements the existing hero layout and maintains visual hierarchy",
+        "id": "REQ-22",
+        "summary": "In the HeroSection component (frontend/src/components/HeroSection.tsx), increase the BlueFire logo size from 48px to 80px by updating the img element's width and height attributes in the badge section",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/HeroSection.tsx"
@@ -35,8 +33,8 @@
         ]
       },
       {
-        "id": "REQ-19",
-        "summary": "Add the BlueFire logo to the footer section at medium size alongside the company name, ensuring consistent branding across all page sections",
+        "id": "REQ-23",
+        "summary": "In the Footer component (frontend/src/components/Footer.tsx), increase the BlueFire logo size from 32px to 56px by updating the img element's width and height attributes",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Footer.tsx"
@@ -44,15 +42,6 @@
         "matchedFiles": [
           "frontend/src/components/Footer.tsx"
         ]
-      },
-      {
-        "id": "REQ-20",
-        "summary": "Render the BlueFire logo as a static asset from frontend/public/assets/generated using the uploaded logo image files (file_00000000e32471fd987536c27237c5ae.png)",
-        "status": "missing",
-        "plannedFiles": [
-          "frontend/public/assets/file_00000000e32471fd987536c27237c5ae.png"
-        ],
-        "matchedFiles": []
       }
     ]
   },
@@ -61,7 +50,6 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/App.tsx",
     "frontend/src/components/Footer.tsx",
     "frontend/src/components/Header.tsx",
     "frontend/src/components/HeroSection.tsx",

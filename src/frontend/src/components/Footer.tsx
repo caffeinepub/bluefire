@@ -14,7 +14,7 @@ export default function Footer() {
               <img 
                 src="/assets/file_00000000e32471fd987536c27237c5ae.png" 
                 alt="BlueFire Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-14 h-14 object-contain"
               />
               <span className="text-2xl font-bold text-foreground">BlueFire</span>
             </div>
