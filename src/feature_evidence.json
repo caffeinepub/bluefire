@@ -2,10 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-hero-section-with-the-company-name-bluefire-prominently-displayed-a-tagline-emphasizing-cybersecurity-consulting-expertise-in-mexico-and-a-primary-call-to-action-button-for-contacting-or-requesting-a-pilot-scan-include-a-visually-striking-hero-background-image",
-      "featureTitle": "Create a hero section with the company name 'BlueFire' prominently displayed, a tagline emphasizing cybersecurity consulting expertise in Mexico, and a primary call-to-action button for contacting or requesting a pilot scan. Include a visually striking hero background image.",
+      "featureId": "feature-remove-any-scroll-based-parallax-or-animation-effects-from-the-homepage-hero-section",
+      "featureTitle": "Remove any scroll-based parallax or animation effects from the homepage hero section",
       "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/HeroSection.tsx"
       ],
       "components": [
@@ -16,16 +15,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-1"
+        "REQ-11"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-services-section-in-spanish-explaining-the-four-core-services-registro-de-activos-asset-registry-evaluaci-n-de-vulnerabilidades-vulnerability-assessment-remediaci-n-de-vulnerabilidades-and-segmentaci-n-de-redes-network-segmentation-each-service-must-include-a-description-why-it-s-necessary-in-the-mexican-context-and-key-benefits-as-detailed-in-the-source-document",
-      "featureTitle": "Create a Services section in Spanish explaining the four core services: Registro de Activos (Asset Registry), Evaluación de Vulnerabilidades (Vulnerability Assessment), Remediación de Vulnerabilidades, and Segmentación de Redes (Network Segmentation). Each service must include a description, why it's necessary in the Mexican context, and key benefits as detailed in the source document.",
+      "featureId": "feature-change-the-hero-section-background-image-to-a-white-blank-background-to-improve-text-readability",
+      "featureTitle": "Change the hero section background image to a white/blank background to improve text readability",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ServicesSection.tsx"
+        "frontend/src/components/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -35,174 +33,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-market-context-section-in-spanish-highlighting-cybersecurity-statistics-for-mexico-over-40-billion-cyberattack-attempts-in-h1-2025-35-200-million-in-q1-2026-74-of-mexican-companies-affected-by-ransomware-in-2025-sectors-most-affected-finance-31-health-21-manufacturing-19-and-pyme-vulnerability-statistics-only-40-have-active-security-protocols-despite-representing-99-8-of-mexican-businesses",
-      "featureTitle": "Create a Market Context section in Spanish highlighting cybersecurity statistics for Mexico: over 40 billion cyberattack attempts in H1 2025, 35,200 million in Q1 2026, 74% of Mexican companies affected by ransomware in 2025, sectors most affected (finance 31%, health 21%, manufacturing 19%), and PYME vulnerability statistics (only 40% have active security protocols despite representing 99.8% of Mexican businesses).",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/MarketContextSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-target-clients-section-in-spanish-differentiating-service-approach-for-pymes-short-sales-cycle-standardized-services-accessible-pricing-simplified-deliverables-versus-maquiladoras-long-sales-cycle-formal-sow-and-nda-required-professional-insurance-needed-higher-ticket-projects-recurring-contracts-include-descriptions-of-target-client-types-local-pymes-retail-logistics-services-manufacturing-plants-supply-chain-providers-and-msps-it-providers",
-      "featureTitle": "Create a Target Clients section in Spanish differentiating service approach for PYMEs (short sales cycle, standardized services, accessible pricing, simplified deliverables) versus Maquiladoras (long sales cycle, formal SOW and NDA required, professional insurance needed, higher-ticket projects, recurring contracts). Include descriptions of target client types: local PYMEs (retail, logistics, services), manufacturing plants, supply chain providers, and MSPs/IT providers.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/TargetClientsSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-workflow-overview-section-in-spanish-explaining-the-maivor-workflow-process-for-asset-registry-vulnerability-assessment-patching-and-network-segmentation-include-key-stages-discovery-passive-and-active-vulnerability-scanning-remediation-planning-segmentation-design-and-validation-emphasize-the-secure-repeatable-methodology-for-it-ot-environments",
-      "featureTitle": "Create a Workflow Overview section in Spanish explaining the MAIVOR workflow process for Asset Registry, Vulnerability Assessment, Patching, and Network Segmentation. Include key stages: discovery (passive and active), vulnerability scanning, remediation planning, segmentation design, and validation. Emphasize the secure, repeatable methodology for IT/OT environments.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/WorkflowSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-pilot-program-section-in-spanish-promoting-the-entry-level-quick-scan-service-for-1-3-ips-domains-including-delivery-of-executive-report-and-a-30-minute-prioritization-meeting-describe-the-streamlined-process-initial-contact-sow-signing-48-hour-scan-execution-report-delivery-and-optional-remediation-follow-up-with-monthly-retainer-offerings",
-      "featureTitle": "Create a Pilot Program section in Spanish promoting the entry-level quick scan service for 1-3 IPs/domains, including delivery of executive report and a 30-minute prioritization meeting. Describe the streamlined process: initial contact, SOW signing, 48-hour scan execution, report delivery, and optional remediation follow-up with monthly retainer offerings.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/PilotProgramSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-contact-section-in-spanish-with-contact-details-for-angel-medina-email-angelmedina121215-gmail-com-and-phone-52-899-228-4075-include-a-contact-form-with-fields-for-name-company-email-phone-and-message-add-a-clear-call-to-action-encouraging-potential-clients-to-request-a-consultation-or-pilot-scan",
-      "featureTitle": "Create a Contact section in Spanish with contact details for Angel Medina: email angelmedina121215@gmail.com and phone +52 899 228 4075. Include a contact form with fields for name, company, email, phone, and message. Add a clear call-to-action encouraging potential clients to request a consultation or pilot scan.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ContactSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-spanish-language-throughout-the-entire-website-all-navigation-headings-body-text-buttons-form-labels-and-ui-elements-must-be-in-spanish-ensure-proper-spanish-grammar-accent-marks-and-professional-business-terminology-appropriate-for-a-cybersecurity-consulting-firm-targeting-mexican-enterprises",
-      "featureTitle": "Implement Spanish language throughout the entire website. All navigation, headings, body text, buttons, form labels, and UI elements must be in Spanish. Ensure proper Spanish grammar, accent marks, and professional business terminology appropriate for a cybersecurity consulting firm targeting Mexican enterprises.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ContactSection.tsx",
-        "frontend/src/components/HeroSection.tsx",
-        "frontend/src/components/MarketContextSection.tsx",
-        "frontend/src/components/PilotProgramSection.tsx",
-        "frontend/src/components/ServicesSection.tsx",
-        "frontend/src/components/TargetClientsSection.tsx",
-        "frontend/src/components/WorkflowSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-establish-a-cohesive-visual-design-theme-with-a-professional-cybersecurity-aesthetic-use-a-color-palette-that-conveys-trust-security-and-technological-sophistication-avoid-generic-blue-purple-unless-complemented-by-distinctive-accent-colors-implement-consistent-typography-suitable-for-a-b2b-consulting-firm-create-a-modern-layout-with-clear-visual-hierarchy-ample-whitespace-and-professional-imagery-that-reflects-cybersecurity-themes-network-security-digital-protection-industrial-enterprise-environments",
-      "featureTitle": "Establish a cohesive visual design theme with a professional cybersecurity aesthetic. Use a color palette that conveys trust, security, and technological sophistication (avoid generic blue/purple unless complemented by distinctive accent colors). Implement consistent typography suitable for a B2B consulting firm. Create a modern layout with clear visual hierarchy, ample whitespace, and professional imagery that reflects cybersecurity themes (network security, digital protection, industrial/enterprise environments).",
-      "files": [
-        "frontend/src/components/ContactSection.tsx",
-        "frontend/src/components/HeroSection.tsx",
-        "frontend/src/components/MarketContextSection.tsx",
-        "frontend/src/components/PilotProgramSection.tsx",
-        "frontend/src/components/ServicesSection.tsx",
-        "frontend/src/components/TargetClientsSection.tsx",
-        "frontend/src/components/WorkflowSection.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-render-all-generated-images-as-static-assets-from-frontend-public-assets-generated-include-the-hero-background-image-service-icons-or-illustrations-and-any-supporting-imagery-for-market-statistics-or-workflow-visualization",
-      "featureTitle": "Render all generated images as static assets from frontend/public/assets/generated. Include the hero background image, service icons or illustrations, and any supporting imagery for market statistics or workflow visualization.",
-      "files": [
-        "frontend/src/components/HeroSection.tsx",
-        "frontend/src/components/MarketContextSection.tsx",
-        "frontend/src/components/ServicesSection.tsx",
-        "frontend/src/components/WorkflowSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-10"
+        "REQ-12"
       ],
       "confidence": "high"
     }

@@ -7,20 +7,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: 'url(/assets/generated/hero-bg.dim_1920x1080.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background"></div>
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center bg-white">
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="flex justify-center mb-8">
@@ -30,13 +17,13 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900 leading-tight">
           Protección Cibernética
           <br />
           <span className="text-primary">para México</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-slate-700 mb-8 max-w-3xl mx-auto leading-relaxed">
           Consultoría especializada en ciberseguridad para PYMEs y maquiladoras.
           Protegemos sus activos digitales con soluciones integradas de networking y seguridad.
         </p>
@@ -62,15 +49,15 @@ export default function HeroSection() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">40B+</div>
-            <div className="text-sm text-muted-foreground">Intentos de ataque en México (H1 2025)</div>
+            <div className="text-sm text-slate-600">Intentos de ataque en México (H1 2025)</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">74%</div>
-            <div className="text-sm text-muted-foreground">Empresas afectadas por ransomware</div>
+            <div className="text-sm text-slate-600">Empresas afectadas por ransomware</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">99.8%</div>
-            <div className="text-sm text-muted-foreground">PYMEs en México necesitan protección</div>
+            <div className="text-sm text-slate-600">PYMEs en México necesitan protección</div>
           </div>
         </div>
       </div>
