@@ -94,7 +94,7 @@ export default function ContactSection() {
           <div className="space-y-6">
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/8995081015?text=Hola%2C%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20de%2030%20minutos"
+              href="https://wa.me/528992284075?text=Hola%2C%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20de%2030%20minutos"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-6 rounded-2xl text-white transition-all duration-200 hover:scale-105 hover:shadow-glow"
@@ -124,14 +124,16 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-0.5">
-                    Teléfono
+                    Teléfono / WhatsApp
                   </div>
                   <a
-                    href="tel:+528995081015"
+                    href="https://wa.me/528992284075"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-bold hover:underline"
                     style={{ color: '#0A2540' }}
                   >
-                    (899) 508-10-15
+                    (899) 228-4075
                   </a>
                 </div>
               </div>

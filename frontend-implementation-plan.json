@@ -1,39 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Integrate Bluefire Cysec PNG logo into Navbar and Footer",
+  "title": "Remove rectangle element above tagline in Navbar header",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Replace Navbar text/placeholder logo with the Bluefire Cysec PNG logo served from frontend/public/assets/generated/bluefire-logo.dim_600x200.png",
+      "summary": "Remove the rectangle element (div, image, banner, or decorative block) that appears above the tagline 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' in the Navbar header",
       "acceptanceCriteria": [
-        "The Bluefire Cysec PNG logo is displayed in the Navbar/header.",
-        "The logo image is served from frontend/public/assets/generated/bluefire-logo.dim_600x200.png.",
-        "The logo is appropriately sized for the navbar (e.g., height ~40–48px) and does not overflow the navbar height.",
-        "The logo is visible against the navbar background."
+        "The rectangle element no longer appears above the 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' text in the header.",
+        "The rest of the Navbar layout and content remains intact.",
+        "No visual gaps or broken layout are introduced where the rectangle was."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Navbar.tsx",
           "operation": "modify",
-          "description": "Replace the existing text-based or placeholder logo with an <img> element that loads the Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png. Apply appropriate sizing (e.g., h-10 or h-12 Tailwind class, approximately 40-48px) to fit the navbar height without overflow. Ensure the logo is visible against the navbar background and maintain the existing logo link behavior. The image should use the alt text 'Bluefire Cysec' for accessibility."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Replace Footer text/placeholder logo with the same Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png",
-      "acceptanceCriteria": [
-        "The Bluefire Cysec PNG logo is displayed in the Footer.",
-        "The footer logo uses the same image file as the navbar logo.",
-        "The logo is appropriately sized for the footer context (e.g., height ~40–56px).",
-        "The logo is visible against the footer background."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Replace the existing text-based or placeholder logo with an <img> element that loads the Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png (the same file used in the Navbar). Apply appropriate sizing for the footer context (e.g., h-10 to h-14 Tailwind class, approximately 40-56px). Ensure the logo is visible against the footer background. The image should use the alt text 'Bluefire Cysec' for accessibility."
+          "description": "Remove the rectangle element (div, image, banner, or decorative block) that is positioned above the tagline text 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas'. Identify the element by examining the JSX structure in the header/brand area and remove only the decorative rectangle while preserving the tagline text and surrounding layout."
         }
       ]
     }

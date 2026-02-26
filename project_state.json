@@ -1,32 +1,21 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Bluefire Cysec cybersecurity company website with hero, services, packages, testimonials, and contact sections. Logo (PNG) being integrated into header/navbar and footer.",
-  "architectural_notes": [
-    "Logo is provided as PNG (white background); used in header/navbar and footer"
-  ],
+  "summary": "Cybersecurity company website for Reynosa, Tamaulipas. User is iterating on the header design, removing a rectangle element above the 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' text.",
+  "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Bluefire Cysec brand logo: dark navy blue shield with blue flame and red network node overlay, 'Bluefire' in bold dark navy text and 'CYSEC' in bold red text on white background (bluefire-logo.dim_600x200.png)",
-  "existing_features": [
+  "existing_features": [],
+  "new_feature_requests": [
     {
-      "id": "feature-save-the-uploaded-bluefire-cysec-logo-image-as-a-static-asset-at-frontend-public-assets-generated-bluefire-logo-png-and-use-it-as-the-logo-image-in-the-navbar-component-replacing-any-existing-text-based-or-placeholder-logo",
-      "title": "Save the uploaded Bluefire Cysec logo image as a static asset at frontend/public/assets/generated/bluefire-logo.png and use it as the logo image in the Navbar component, replacing any existing text-based or placeholder logo.",
+      "id": "AR-1",
+      "summary": "In the Navbar component (frontend/src/components/Navbar.tsx), remove the rectangle element (div, image, banner, or decorative block) that appears above the text 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' in the header.",
       "reqIds": [
         "REQ-1"
       ],
-      "version": 1
-    },
-    {
-      "id": "feature-use-the-same-bluefire-cysec-png-logo-frontend-public-assets-generated-bluefire-logo-png-in-the-footer-component-replacing-any-existing-text-based-or-placeholder-logo",
-      "title": "Use the same Bluefire Cysec PNG logo (frontend/public/assets/generated/bluefire-logo.png) in the Footer component, replacing any existing text-based or placeholder logo.",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
+      "status": "pending"
     }
   ],
-  "new_feature_requests": [],
   "gameProjectType": "none",
   "projectName": "Bluefire Cysec",
   "clarification_mode": "instant",

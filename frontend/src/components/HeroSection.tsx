@@ -35,16 +35,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        {/* Logo */}
-        <div className="flex justify-center mb-10">
-          <img
-            src="/assets/generated/bluefire-cysec-full-logo.dim_1200x400.png"
-            alt="Bluefire Cysec"
-            className="h-16 md:h-20 w-auto object-contain"
-            style={{ filter: 'brightness(0) invert(1)' }}
-          />
-        </div>
-
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-bf-blue/40 bg-bf-blue/10 text-bf-blue text-sm font-semibold mb-8 tracking-wide">
           <span className="w-2 h-2 rounded-full bg-bf-blue animate-pulse-slow inline-block" />
@@ -66,7 +56,7 @@ export default function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <a
-            href="https://wa.me/8995081015?text=Hola%2C%20me%20interesa%20el%20diagn%C3%B3stico%20gratuito%20de%2030%20minutos"
+            href="https://wa.me/528992284075?text=Hola%2C%20me%20interesa%20el%20diagn%C3%B3stico%20gratuito%20de%2030%20minutos"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 px-8 py-4 rounded-md font-bold text-white text-base transition-all duration-200 hover:scale-105 hover:shadow-glow"
@@ -79,7 +69,7 @@ export default function HeroSection() {
             onClick={scrollToPricing}
             className="flex items-center gap-2 px-8 py-4 rounded-md font-bold text-white text-base border-2 border-white/30 hover:border-bf-blue hover:text-bf-blue transition-all duration-200"
           >
-            Ver Paquetes y Precios
+            Ver Paquetes
           </button>
         </div>
 

@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Replace any existing text-based or placeholder logo in the Navbar and Footer with the actual Bluefire Cysec PNG logo image.
+**Goal:** Remove the rectangle element that appears above the tagline "Especialistas en Ciberseguridad · Reynosa, Tamaulipas" in the Navbar header.
 
 **Planned changes:**
-- Save the uploaded Bluefire Cysec logo as a static asset at `frontend/public/assets/generated/bluefire-logo.png`
-- Update the Navbar/header component to display the PNG logo image (height ~40–48px) instead of any text or placeholder
-- Update the Footer component to display the same PNG logo image (height ~40–56px) instead of any text or placeholder
+- Remove the rectangle (div, image, banner, or decorative block) located above the tagline text in `frontend/src/components/Navbar.tsx`
+- Ensure no visual gaps or layout breaks are introduced where the rectangle was removed
 
-**User-visible outcome:** The Bluefire Cysec logo (shield with blue flame, "Bluefire" in navy and "CYSEC" in red) appears in both the navbar and the footer of the site.
+**User-visible outcome:** The Navbar header displays cleanly without the unwanted rectangle above the tagline text, with the rest of the layout intact.

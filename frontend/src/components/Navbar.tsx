@@ -5,7 +5,7 @@ const navLinks = [
   { label: 'Inicio', href: '#inicio' },
   { label: '¿Qué hacemos?', href: '#que-hacemos' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Precios', href: '#precios' },
+  { label: 'Paquetes', href: '#precios' },
   { label: '¿Por qué nosotros?', href: '#por-que-nosotros' },
   { label: 'Testimonios', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
@@ -40,18 +40,17 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Brand Name */}
           <a
             href="#inicio"
             onClick={(e) => { e.preventDefault(); handleNavClick('#inicio'); }}
             className="flex-shrink-0"
-            aria-label="Bluefire Cysec - Inicio"
+            aria-label="Bluefire CYSEC - Inicio"
           >
-            <img
-              src="/assets/generated/bluefire-logo.dim_600x200.png"
-              alt="Bluefire Cysec"
-              className="h-10 md:h-12 w-auto object-contain"
-            />
+            <span className="text-xl md:text-2xl font-black tracking-tight">
+              <span className="text-white">Bluefire</span>
+              <span className="text-bf-blue"> CYSEC</span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -67,7 +66,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/8995081015"
+              href="https://wa.me/528992284075"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-3 px-4 py-2 bg-bf-red text-white text-sm font-semibold rounded-md hover:bg-red-600 transition-colors duration-200 whitespace-nowrap"
@@ -102,7 +101,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/8995081015"
+              href="https://wa.me/528992284075"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 px-4 py-3 bg-bf-red text-white text-sm font-semibold rounded-md hover:bg-red-600 transition-colors duration-200 text-center"

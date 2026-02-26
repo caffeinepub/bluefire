@@ -14,12 +14,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#inicio" onClick={(e) => { e.preventDefault(); document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' }); }}>
-              <img
-                src="/assets/generated/bluefire-logo.dim_600x200.png"
-                alt="Bluefire Cysec"
-                className="h-12 w-auto object-contain mb-4"
-              />
+            <a
+              href="#inicio"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-block mb-4"
+            >
+              <span className="text-2xl font-black tracking-tight">
+                <span className="text-white">Bluefire</span>
+                <span style={{ color: '#00BFFF' }}> CYSEC</span>
+              </span>
             </a>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
               Seguridad digital para la continuidad de tu operación. Especialistas en ciberseguridad IT/OT para PyMEs y maquiladoras en Reynosa, Tamaulipas.
@@ -60,7 +66,10 @@ export default function Footer() {
                 <li key={service}>
                   <a
                     href="#servicios"
-                    onClick={(e) => { e.preventDefault(); document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' }); }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                     className="text-sm text-white/55 hover:text-white transition-colors duration-200"
                   >
                     {service}
@@ -78,8 +87,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#00BFFF' }} />
-                <a href="tel:+528995081015" className="text-sm text-white/55 hover:text-white transition-colors">
-                  (899) 508-10-15
+                <a
+                  href="https://wa.me/528992284075"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/55 hover:text-white transition-colors"
+                >
+                  (899) 228-4075
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
