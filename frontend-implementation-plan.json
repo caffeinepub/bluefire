@@ -1,0 +1,41 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Integrate Bluefire Cysec PNG logo into Navbar and Footer",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Replace Navbar text/placeholder logo with the Bluefire Cysec PNG logo served from frontend/public/assets/generated/bluefire-logo.dim_600x200.png",
+      "acceptanceCriteria": [
+        "The Bluefire Cysec PNG logo is displayed in the Navbar/header.",
+        "The logo image is served from frontend/public/assets/generated/bluefire-logo.dim_600x200.png.",
+        "The logo is appropriately sized for the navbar (e.g., height ~40–48px) and does not overflow the navbar height.",
+        "The logo is visible against the navbar background."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Replace the existing text-based or placeholder logo with an <img> element that loads the Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png. Apply appropriate sizing (e.g., h-10 or h-12 Tailwind class, approximately 40-48px) to fit the navbar height without overflow. Ensure the logo is visible against the navbar background and maintain the existing logo link behavior. The image should use the alt text 'Bluefire Cysec' for accessibility."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Replace Footer text/placeholder logo with the same Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png",
+      "acceptanceCriteria": [
+        "The Bluefire Cysec PNG logo is displayed in the Footer.",
+        "The footer logo uses the same image file as the navbar logo.",
+        "The logo is appropriately sized for the footer context (e.g., height ~40–56px).",
+        "The logo is visible against the footer background."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Replace the existing text-based or placeholder logo with an <img> element that loads the Bluefire Cysec PNG logo from frontend/public/assets/generated/bluefire-logo.dim_600x200.png (the same file used in the Navbar). Apply appropriate sizing for the footer context (e.g., h-10 to h-14 Tailwind class, approximately 40-56px). Ensure the logo is visible against the footer background. The image should use the alt text 'Bluefire Cysec' for accessibility."
+        }
+      ]
+    }
+  ]
+}

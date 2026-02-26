@@ -1,0 +1,50 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T03:40:57.282Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Save the uploaded Bluefire Cysec logo image as a static asset at frontend/public/assets/generated/bluefire-logo.png and use it as the logo image in the Navbar component, replacing any existing text-based or placeholder logo.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Use the same Bluefire Cysec PNG logo (frontend/public/assets/generated/bluefire-logo.png) in the Footer component, replacing any existing text-based or placeholder logo.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/bluefire-logo.dim_600x200.png",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

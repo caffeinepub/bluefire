@@ -1,0 +1,65 @@
+{
+  "kind": "build_request",
+  "title": "Integrate Bluefire Cysec PNG logo into Navbar and Footer",
+  "projectName": "Bluefire Cysec",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Save the uploaded Bluefire Cysec logo image as a static asset at frontend/public/assets/generated/bluefire-logo.png and use it as the logo image in the Navbar component, replacing any existing text-based or placeholder logo.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7",
+          "msg-8"
+        ],
+        "quotes": [
+          "como png esta bien",
+          "en el header/navbar y en el footer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Bluefire Cysec PNG logo is displayed in the Navbar/header.",
+        "The logo image is served from frontend/public/assets/generated/bluefire-logo.png.",
+        "The logo is appropriately sized for the navbar (e.g., height ~40–48px) and does not overflow the navbar height.",
+        "The logo is visible against the navbar background."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Use the same Bluefire Cysec PNG logo (frontend/public/assets/generated/bluefire-logo.png) in the Footer component, replacing any existing text-based or placeholder logo.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7",
+          "msg-8"
+        ],
+        "quotes": [
+          "como png esta bien",
+          "en el header/navbar y en el footer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Bluefire Cysec PNG logo is displayed in the Footer.",
+        "The footer logo uses the same image file as the navbar logo.",
+        "The logo is appropriately sized for the footer context (e.g., height ~40–56px).",
+        "The logo is visible against the footer background."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the uploaded image as a PNG file; do not convert it to SVG or recreate it as a component.",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/main.tsx."
+  ],
+  "nonGoals": [
+    "Redesigning the Navbar or Footer layout beyond logo placement.",
+    "Adding the logo to any other section (hero, services, etc.).",
+    "Converting the logo to SVG or applying transparency treatments."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Bluefire Cysec brand logo: dark navy blue shield with blue flame and red network node overlay, 'Bluefire' in bold dark navy text and 'CYSEC' in bold red text on white background (bluefire-logo.dim_600x200.png)"
+    ],
+    "edits": []
+  }
+}
