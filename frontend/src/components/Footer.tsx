@@ -98,8 +98,8 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#00BFFF' }} />
-                <a href="mailto:ventas@bluefirecysec.com" className="text-sm text-white/55 hover:text-white transition-colors">
-                  ventas@bluefirecysec.com
+                <a href="mailto:ventas@bluefire.com.mx" className="text-sm text-white/55 hover:text-white transition-colors">
+                  ventas@bluefire.com.mx
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
@@ -118,12 +118,12 @@ export default function Footer() {
           style={{ borderColor: 'rgba(255,255,255,0.1)' }}
         >
           <p className="text-white/40">
-            © {currentYear} Bluefire Cysec. Todos los derechos reservados.
+            © {currentYear} Bluefire CYSEC. Todos los derechos reservados.
           </p>
           <p className="text-white/40">
-            Hecho con{' '}
-            <span style={{ color: '#FF0033' }}>♥</span>
-            {' '}usando{' '}
+            Built with{' '}
+            <span style={{ color: '#FF0033' }}>♥</span>{' '}
+            using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
               target="_blank"

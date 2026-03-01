@@ -1,10 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Remove the rectangle element that appears above the tagline "Especialistas en Ciberseguridad · Reynosa, Tamaulipas" in the Navbar header.
+**Goal:** Update the contact email address throughout the frontend to `ventas@bluefire.com.mx`.
 
 **Planned changes:**
-- Remove the rectangle (div, image, banner, or decorative block) located above the tagline text in `frontend/src/components/Navbar.tsx`
-- Ensure no visual gaps or layout breaks are introduced where the rectangle was removed
+- Replace all instances of the contact email in the ContactSection component with `ventas@bluefire.com.mx`
+- Replace all instances of the contact email in the Footer component with `ventas@bluefire.com.mx`
+- Update any `mailto:` links site-wide to use `ventas@bluefire.com.mx`
 
-**User-visible outcome:** The Navbar header displays cleanly without the unwanted rectangle above the tagline text, with the rest of the layout intact.
+**User-visible outcome:** All contact email references across the site display and link to `ventas@bluefire.com.mx`.

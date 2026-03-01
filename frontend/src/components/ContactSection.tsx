@@ -150,11 +150,11 @@ export default function ContactSection() {
                     Correo
                   </div>
                   <a
-                    href="mailto:ventas@bluefirecysec.com"
+                    href="mailto:ventas@bluefire.com.mx"
                     className="font-bold hover:underline"
                     style={{ color: '#0A2540' }}
                   >
-                    ventas@bluefirecysec.com
+                    ventas@bluefire.com.mx
                   </a>
                 </div>
               </div>

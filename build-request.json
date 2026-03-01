@@ -1,39 +1,34 @@
 {
   "kind": "build_request",
-  "title": "Remove rectangle element above tagline in Navbar header",
+  "title": "Update contact email to ventas@bluefire.com.mx",
   "projectName": "Bluefire Cysec",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "In the Navbar component (frontend/src/components/Navbar.tsx), remove the rectangle element (div, image, banner, or decorative block) that appears above the text 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' in the header.",
+      "text": "Update all instances of the contact email address in the frontend to ventas@bluefire.com.mx, including in the ContactSection, Footer, and any other component that displays or uses a contact email.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-6",
-          "msg-7",
           "msg-8"
         ],
         "quotes": [
-          "es un rectangulo arriba de donde dice Especialistas en Ciberseguridad · Reynosa, Tamaulipas",
-          "en el header"
+          "edita el correo de contacto para que sea ventas@bluefire.com.mx"
         ]
       },
       "acceptanceCriteria": [
-        "The rectangle element no longer appears above the 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' text in the header.",
-        "The rest of the Navbar layout and content remains intact.",
-        "No visual gaps or broken layout are introduced where the rectangle was."
+        "The contact email displayed in ContactSection shows ventas@bluefire.com.mx",
+        "The contact email displayed in Footer shows ventas@bluefire.com.mx",
+        "Any mailto: links use ventas@bluefire.com.mx",
+        "No old contact email addresses remain anywhere in the UI"
       ]
     }
   ],
-  "constraints": [
-    "Do not modify any files listed under frontend.immutablePaths.",
-    "Do not alter any other sections or components beyond the Navbar header."
-  ],
+  "constraints": [],
   "nonGoals": [
-    "Redesigning the overall Navbar layout.",
-    "Modifying the Footer or any other sections.",
-    "Adding new elements to replace the removed rectangle."
+    "Changing any other contact details such as phone number or WhatsApp link",
+    "Modifying backend logic"
   ],
   "imageRequirements": {
     "required": [],

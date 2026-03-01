@@ -1,22 +1,21 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Cybersecurity company website for Reynosa, Tamaulipas. User is iterating on the header design, removing a rectangle element above the 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' text.",
+  "summary": "New project",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "existing_features": [],
-  "new_feature_requests": [
+  "existing_features": [
     {
-      "id": "AR-1",
-      "summary": "In the Navbar component (frontend/src/components/Navbar.tsx), remove the rectangle element (div, image, banner, or decorative block) that appears above the text 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' in the header.",
+      "id": "feature-update-all-instances-of-the-contact-email-address-in-the-frontend-to-ventas-bluefire-com-mx-including-in-the-contactsection-footer-and-any-other-component-that-displays-or-uses-a-contact-email",
+      "title": "Update all instances of the contact email address in the frontend to ventas@bluefire.com.mx, including in the ContactSection, Footer, and any other component that displays or uses a contact email.",
       "reqIds": [
         "REQ-1"
       ],
-      "status": "pending"
+      "version": 1
     }
   ],
-  "gameProjectType": "none",
+  "new_feature_requests": [],
   "projectName": "Bluefire Cysec",
   "clarification_mode": "instant",
   "clarification_rounds": 0

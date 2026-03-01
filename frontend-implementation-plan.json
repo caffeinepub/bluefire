@@ -1,21 +1,27 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove rectangle element above tagline in Navbar header",
+  "title": "Update contact email to ventas@bluefire.com.mx",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Remove the rectangle element (div, image, banner, or decorative block) that appears above the tagline 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' in the Navbar header",
+      "summary": "Update all instances of the contact email address in the frontend to ventas@bluefire.com.mx",
       "acceptanceCriteria": [
-        "The rectangle element no longer appears above the 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas' text in the header.",
-        "The rest of the Navbar layout and content remains intact.",
-        "No visual gaps or broken layout are introduced where the rectangle was."
+        "The contact email displayed in ContactSection shows ventas@bluefire.com.mx",
+        "The contact email displayed in Footer shows ventas@bluefire.com.mx",
+        "Any mailto: links use ventas@bluefire.com.mx",
+        "No old contact email addresses remain anywhere in the UI"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Navbar.tsx",
+          "path": "frontend/src/components/ContactSection.tsx",
           "operation": "modify",
-          "description": "Remove the rectangle element (div, image, banner, or decorative block) that is positioned above the tagline text 'Especialistas en Ciberseguridad · Reynosa, Tamaulipas'. Identify the element by examining the JSX structure in the header/brand area and remove only the decorative rectangle while preserving the tagline text and surrounding layout."
+          "description": "Update the contact email display and any mailto: links to ventas@bluefire.com.mx in the contact information section"
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the contact email display and any mailto: links to ventas@bluefire.com.mx in the footer contact details"
         }
       ]
     }
